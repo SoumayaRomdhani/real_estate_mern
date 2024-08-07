@@ -1,9 +1,9 @@
-import React from 'react'
+
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 
-export default function signup () {
+export default function Signup () {
   const [formData, setFormData]=useState({});
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
