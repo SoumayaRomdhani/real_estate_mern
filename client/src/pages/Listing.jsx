@@ -27,7 +27,7 @@ export default function Listing() {
 
   const [contact, setContact] = useState(false); 
   const params = useParams();
-  const {currentUser} = useSelector((state) => state.user);
+  const { currentUser } = useSelector((state) => state.user);
   useEffect(() => {
     const fetchListing = async () => {
       try {
@@ -142,7 +142,7 @@ export default function Listing() {
                 Contact landlord
               </button>
             )}
-            {contact && <Contact listing={listing}/>}
+            {contact && <Contact listing={listing} />}
           </div>
         </div>
       )}
