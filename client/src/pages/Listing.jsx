@@ -138,8 +138,9 @@ export default function Listing() {
               </li>
             </ul>
             {currentUser && listing.userRef !== currentUser._id && !contact && (
-              <button onClick={()=>setContact(true)} className='bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 p-3'>
-                Contact landlord
+            
+              <button onClick={()=>setContact(true)} className="relative inline-flex items-center justify-center p-3.5 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 uppercase">
+              Cantact landlord
               </button>
             )}
             {contact && <Contact listing={listing} />}

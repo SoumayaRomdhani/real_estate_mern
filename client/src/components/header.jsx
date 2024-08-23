@@ -29,12 +29,12 @@ export default function Header() {
 
 
   return (
-    <header className='bg-slate-200 shadow-md'>
+    <header className='bg-indigo-100 shadow-md'>
         <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
           <Link to='/' >
         <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
-            <span className='text-slate-500'>Estate</span>
-            <span className = 'text-slate-400'>Ease  </span>
+            <span className='text-gray-700'>Student</span>
+            <span className = 'text-teal-600'>Nest  </span>
         </h1>
         </Link>
         <form
